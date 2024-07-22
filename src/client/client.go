@@ -181,7 +181,7 @@ func (client *Client) send(call *Call) {
 	client.sending.Lock()
 	defer client.sending.Unlock()
 
-	// register this call.
+	// registry this call.
 	seq, err := client.registerCall(call)
 	if err != nil {
 		call.Error = err

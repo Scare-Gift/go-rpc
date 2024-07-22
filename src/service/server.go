@@ -249,7 +249,7 @@ func (server *Server) HandleHTTP() {
 	log.Println("rpc server debug path:", defaultDebugPath)
 }
 
-// HandleHTTP is a convenient approach for default server to register HTTP handlers
+// HandleHTTP is a convenient approach for default server to registry HTTP handlers
 func HandleHTTP() {
 	DefaultServer.HandleHTTP()
 }
